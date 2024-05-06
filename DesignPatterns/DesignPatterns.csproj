@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6AF194AF-4674-4E49-AF07-D3D8FA976A17}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>DesignPatterns</RootNamespace>
+    <AssemblyName>DesignPatterns</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="创建型\单例模式\Singleton.cs" />
+    <Compile Include="创建型\原型模式\TestICloneable.cs" />
+    <Compile Include="创建型\原型模式\Resume.cs" />
+    <Compile Include="创建型\工厂方法\AbstractProduct.cs" />
+    <Compile Include="创建型\工厂方法\FactoryProductA.cs" />
+    <Compile Include="创建型\工厂方法\FactoryProductB.cs" />
+    <Compile Include="创建型\工厂方法\FactoryProductC.cs" />
+    <Compile Include="创建型\工厂方法\IProductFactory.cs" />
+    <Compile Include="创建型\工厂方法\ProductA.cs" />
+    <Compile Include="创建型\工厂方法\ProductB.cs" />
+    <Compile Include="创建型\工厂方法\ProductC.cs" />
+    <Compile Include="创建型\工厂方法\ProductTest.cs" />
+    <Compile Include="创建型\工厂方法\Simple\FactoryAdd.cs" />
+    <Compile Include="创建型\工厂方法\Simple\FactoryMul.cs" />
+    <Compile Include="创建型\工厂方法\Simple\FactorySub.cs" />
+    <Compile Include="创建型\工厂方法\Simple\IOperationFactory.cs" />
+    <Compile Include="创建型\工厂方法\Simple\OperationAdd.cs" />
+    <Compile Include="创建型\工厂方法\Simple\OperationBase.cs" />
+    <Compile Include="创建型\工厂方法\Simple\OperationDiv.cs" />
+    <Compile Include="创建型\工厂方法\Simple\OperationMul.cs" />
+    <Compile Include="创建型\工厂方法\Simple\OperationSub.cs" />
+    <Compile Include="创建型\建造者模式\BuilderTest.cs" />
+    <Compile Include="创建型\建造者模式\PersonBuilder.cs" />
+    <Compile Include="创建型\建造者模式\PersonDirectort.cs" />
+    <Compile Include="创建型\建造者模式\PersonFatBuilder.cs" />
+    <Compile Include="创建型\建造者模式\PersonThinBuilder.cs" />
+    <Compile Include="创建型\抽象工厂\AbstractFactory.cs" />
+    <Compile Include="创建型\抽象工厂\AbstractFactoryTest.cs" />
+    <Compile Include="创建型\抽象工厂\AbstractProductA.cs" />
+    <Compile Include="创建型\抽象工厂\AbstractProductB.cs" />
+    <Compile Include="创建型\抽象工厂\Simple\CreateFactory1.cs" />
+    <Compile Include="创建型\抽象工厂\Simple\CreateFactory2.cs" />
+    <Compile Include="创建型\抽象工厂\Simple\ProductA1.cs" />
+    <Compile Include="创建型\抽象工厂\Simple\ProductA2.cs" />
+    <Compile Include="创建型\抽象工厂\Simple\ProductB1.cs" />
+    <Compile Include="创建型\抽象工厂\Simple\ProductB2.cs" />
+    <Compile Include="创建型\简单工厂\AbstractProduct.cs" />
+    <Compile Include="创建型\简单工厂\ProductA.cs" />
+    <Compile Include="创建型\简单工厂\ProductB.cs" />
+    <Compile Include="创建型\简单工厂\ProductC.cs" />
+    <Compile Include="创建型\简单工厂\ProductFactory.cs" />
+    <Compile Include="创建型\简单工厂\ProductTest.cs" />
+    <Compile Include="创建型\简单工厂\Simple\OperationAdd.cs" />
+    <Compile Include="创建型\简单工厂\Simple\OperationBase.cs" />
+    <Compile Include="创建型\简单工厂\Simple\OperationDiv.cs" />
+    <Compile Include="创建型\简单工厂\Simple\OperationFactory.cs" />
+    <Compile Include="创建型\简单工厂\Simple\OperationMul.cs" />
+    <Compile Include="创建型\简单工厂\Simple\OperationSub.cs" />
+    <Compile Include="结构型\享元模式\ConcreteFlyweight.cs" />
+    <Compile Include="结构型\享元模式\Flyweight.cs" />
+    <Compile Include="结构型\享元模式\FlyweightFactory.cs" />
+    <Compile Include="结构型\享元模式\FlyweightTest.cs" />
+    <Compile Include="结构型\享元模式\Simple\ConcreteWebSite.cs" />
+    <Compile Include="结构型\享元模式\Simple\WebSite.cs" />
+    <Compile Include="结构型\享元模式\Simple\WebSiteFactory.cs" />
+    <Compile Include="结构型\享元模式\UnsharedConcreteFlyweight.cs" />
+    <Compile Include="结构型\代理模式\Proxy.cs" />
+    <Compile Include="结构型\代理模式\ProxyTest.cs" />
+    <Compile Include="结构型\代理模式\RealSubject.cs" />
+    <Compile Include="结构型\代理模式\Subject.cs" />
+    <Compile Include="结构型\外观模式\Facade.cs" />
+    <Compile Include="结构型\外观模式\FacadeTest.cs" />
+    <Compile Include="结构型\外观模式\SubSystemFour.cs" />
+    <Compile Include="结构型\外观模式\SubSystemOne.cs" />
+    <Compile Include="结构型\外观模式\SubSystemThree.cs" />
+    <Compile Include="结构型\外观模式\SubSystemTwo.cs" />
+    <Compile Include="结构型\桥接模式\Abstraction.cs" />
+    <Compile Include="结构型\桥接模式\BridgeTest.cs" />
+    <Compile Include="结构型\桥接模式\ConcreteImplementorA.cs" />
+    <Compile Include="结构型\桥接模式\ConcreteImplementorB.cs" />
+    <Compile Include="结构型\桥接模式\Implementor.cs" />
+    <Compile Include="结构型\桥接模式\RefinedAbstraction.cs" />
+    <Compile Include="结构型\桥接模式\Simple\HandsetAddressList.cs" />
+    <Compile Include="结构型\桥接模式\Simple\HandsetBrand.cs" />
+    <Compile Include="结构型\桥接模式\Simple\HandsetBrandM.cs" />
+    <Compile Include="结构型\桥接模式\Simple\HandsetBrandN.cs" />
+    <Compile Include="结构型\桥接模式\Simple\HandsetGame.cs" />
+    <Compile Include="结构型\桥接模式\Simple\HandsetSoft.cs" />
+    <Compile Include="结构型\组合模式\Component.cs" />
+    <Compile Include="结构型\组合模式\ComponentTest.cs" />
+    <Compile Include="结构型\组合模式\Composite.cs" />
+    <Compile Include="结构型\组合模式\Leaf.cs" />
+    <Compile Include="结构型\装饰模式\Component.cs" />
+    <Compile Include="结构型\装饰模式\ConcreteComponent.cs" />
+    <Compile Include="结构型\装饰模式\ConcreteDecoratorA.cs" />
+    <Compile Include="结构型\装饰模式\ConcreteDecoratorB.cs" />
+    <Compile Include="结构型\装饰模式\Decorator.cs" />
+    <Compile Include="结构型\装饰模式\DecoratorTest.cs" />
+    <Compile Include="结构型\装饰模式\Simple\BigTrouser.cs" />
+    <Compile Include="结构型\装饰模式\Simple\Finery.cs" />
+    <Compile Include="结构型\装饰模式\Simple\LeatherShoes.cs" />
+    <Compile Include="结构型\装饰模式\Simple\Person.cs" />
+    <Compile Include="结构型\装饰模式\Simple\Sneakers.cs" />
+    <Compile Include="结构型\装饰模式\Simple\TShirts.cs" />
+    <Compile Include="结构型\适配器模式\Adaptee.cs" />
+    <Compile Include="结构型\适配器模式\Adapter.cs" />
+    <Compile Include="结构型\适配器模式\Target.cs" />
+    <Compile Include="结构型\适配器模式\TestAdapter.cs" />
+    <Compile Include="行为型\中介者模式\Colleague.cs" />
+    <Compile Include="行为型\中介者模式\ConcreteColleague1.cs" />
+    <Compile Include="行为型\中介者模式\ConcreteColleague2.cs" />
+    <Compile Include="行为型\中介者模式\ConcreteMediator.cs" />
+    <Compile Include="行为型\中介者模式\Mediator.cs" />
+    <Compile Include="行为型\中介者模式\MediatorTest.cs" />
+    <Compile Include="行为型\命令模式\Command.cs" />
+    <Compile Include="行为型\命令模式\CommandTest.cs" />
+    <Compile Include="行为型\命令模式\ConcreteCommand.cs" />
+    <Compile Include="行为型\命令模式\Invoker.cs" />
+    <Compile Include="行为型\命令模式\Receiver.cs" />
+    <Compile Include="行为型\命令模式\Simple\one\BakeChickenWingCommand.cs" />
+    <Compile Include="行为型\命令模式\Simple\one\Barbecuer.cs" />
+    <Compile Include="行为型\命令模式\Simple\one\Command.cs" />
+    <Compile Include="行为型\命令模式\Simple\one\BakeMuttonCommand.cs" />
+    <Compile Include="行为型\命令模式\Simple\one\CommandTestOne.cs" />
+    <Compile Include="行为型\命令模式\Simple\one\Waiter.cs" />
+    <Compile Include="行为型\备忘录模式\Caretaker.cs" />
+    <Compile Include="行为型\备忘录模式\Memento.cs" />
+    <Compile Include="行为型\备忘录模式\MementoTest.cs" />
+    <Compile Include="行为型\备忘录模式\Originator.cs" />
+    <Compile Include="行为型\模板方法模式\AbstractClass.cs" />
+    <Compile Include="行为型\模板方法模式\ConcreteClassA.cs" />
+    <Compile Include="行为型\模板方法模式\ConcreteClassB.cs" />
+    <Compile Include="行为型\模板方法模式\TempleteMethodTest.cs" />
+    <Compile Include="行为型\状态模式\ConcreteStateA.cs" />
+    <Compile Include="行为型\状态模式\ConcreteStateB.cs" />
+    <Compile Include="行为型\状态模式\Context.cs" />
+    <Compile Include="行为型\状态模式\Simple\AfternoonState.cs" />
+    <Compile Include="行为型\状态模式\Simple\EveningState.cs" />
+    <Compile Include="行为型\状态模式\Simple\ForenoonState.cs" />
+    <Compile Include="行为型\状态模式\Simple\NoonState.cs" />
+    <Compile Include="行为型\状态模式\Simple\ResetState.cs" />
+    <Compile Include="行为型\状态模式\Simple\SleepingState.cs" />
+    <Compile Include="行为型\状态模式\Simple\Work.cs" />
+    <Compile Include="行为型\状态模式\Simple\WorkState.cs" />
+    <Compile Include="行为型\状态模式\State.cs" />
+    <Compile Include="行为型\状态模式\StateTest.cs" />
+    <Compile Include="行为型\策略模式\ConcreteStrategyA.cs" />
+    <Compile Include="行为型\策略模式\ConcreteStrategyB.cs" />
+    <Compile Include="行为型\策略模式\ConcreteStrategyC.cs" />
+    <Compile Include="行为型\策略模式\Context.cs" />
+    <Compile Include="行为型\策略模式\ContextTest.cs" />
+    <Compile Include="行为型\策略模式\Simple\CashContext.cs" />
+    <Compile Include="行为型\策略模式\Simple\CashNormal.cs" />
+    <Compile Include="行为型\策略模式\Simple\CashRebate.cs" />
+    <Compile Include="行为型\策略模式\Simple\CashReturn.cs" />
+    <Compile Include="行为型\策略模式\Simple\CashSuper.cs" />
+    <Compile Include="行为型\策略模式\Strategy.cs" />
+    <Compile Include="行为型\职责链模式\ChainOfResponsibilityTest.cs" />
+    <Compile Include="行为型\职责链模式\ConcreteHandler1.cs" />
+    <Compile Include="行为型\职责链模式\ConcreteHandler2.cs" />
+    <Compile Include="行为型\职责链模式\ConcreteHandler3.cs" />
+    <Compile Include="行为型\职责链模式\Handler.cs" />
+    <Compile Include="行为型\解释器模式\AbstractExpression.cs" />
+    <Compile Include="行为型\解释器模式\Content.cs" />
+    <Compile Include="行为型\解释器模式\InterpreterTest.cs" />
+    <Compile Include="行为型\解释器模式\NonterminalExpression.cs" />
+    <Compile Include="行为型\解释器模式\simple\Expression.cs" />
+    <Compile Include="行为型\解释器模式\simple\Note.cs" />
+    <Compile Include="行为型\解释器模式\simple\PlayContext.cs" />
+    <Compile Include="行为型\解释器模式\simple\Scale.cs" />
+    <Compile Include="行为型\解释器模式\TermianlExpression.cs" />
+    <Compile Include="行为型\访问者模式\ConcreteElementA.cs" />
+    <Compile Include="行为型\访问者模式\ConcreteElementB.cs" />
+    <Compile Include="行为型\访问者模式\ConcreteVisitor1.cs" />
+    <Compile Include="行为型\访问者模式\ConcreteVisitor2.cs" />
+    <Compile Include="行为型\访问者模式\Element.cs" />
+    <Compile Include="行为型\访问者模式\ObjectStructure.cs" />
+    <Compile Include="行为型\访问者模式\Simple\Action.cs" />
+    <Compile Include="行为型\访问者模式\Simple\Amativeness.cs" />
+    <Compile Include="行为型\访问者模式\Simple\Failing.cs" />
+    <Compile Include="行为型\访问者模式\Simple\Man.cs" />
+    <Compile Include="行为型\访问者模式\Simple\ObjectStructure.cs" />
+    <Compile Include="行为型\访问者模式\Simple\Person.cs" />
+    <Compile Include="行为型\访问者模式\Simple\Success.cs" />
+    <Compile Include="行为型\访问者模式\Simple\Woman.cs" />
+    <Compile Include="行为型\访问者模式\Visitor.cs" />
+    <Compile Include="行为型\访问者模式\VisitorTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="结构型\享元模式\享元模式注解.txt" />
+    <Content Include="结构型\代理模式\代理模式概念.txt" />
+    <Content Include="结构型\桥接模式\桥接模式注解.txt" />
+    <Content Include="结构型\外观模式\外观模式注解.txt" />
+    <Content Include="结构型\组合模式\组合模式注解.txt" />
+    <Content Include="结构型\装饰模式\装饰模式概述.txt" />
+    <Content Include="结构型\适配器模式\适配器模式注解.txt" />
+    <Content Include="行为型\中介者模式\中介者模式.txt" />
+    <Content Include="行为型\命令模式\命令模式.txt" />
+    <Content Include="行为型\备忘录模式\备忘录模式.txt" />
+    <Content Include="行为型\模板方法模式\模板方法.txt" />
+    <Content Include="行为型\状态模式\状态模式.txt" />
+    <Content Include="行为型\策略模式\策略模式.txt" />
+    <Content Include="行为型\职责链模式\职责链模式.txt" />
+    <Content Include="行为型\解释器模式\解释器模式概述.txt" />
+    <Content Include="行为型\访问者模式\访问者模式.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

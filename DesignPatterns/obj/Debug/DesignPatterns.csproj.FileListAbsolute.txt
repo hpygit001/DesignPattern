@@ -1,0 +1,7 @@
+E:\Test\VS_Normal\设计模式\DesignPatterns\DesignPatterns\bin\Debug\DesignPatterns.exe.config
+E:\Test\VS_Normal\设计模式\DesignPatterns\DesignPatterns\bin\Debug\DesignPatterns.exe
+E:\Test\VS_Normal\设计模式\DesignPatterns\DesignPatterns\bin\Debug\DesignPatterns.pdb
+E:\Test\VS_Normal\设计模式\DesignPatterns\DesignPatterns\obj\Debug\DesignPatterns.csproj.CoreCompileInputs.cache
+E:\Test\VS_Normal\设计模式\DesignPatterns\DesignPatterns\obj\Debug\DesignPatterns.exe
+E:\Test\VS_Normal\设计模式\DesignPatterns\DesignPatterns\obj\Debug\DesignPatterns.pdb
+E:\Test\VS_Normal\设计模式\DesignPatterns\DesignPatterns\obj\Debug\DesignPatterns.csprojAssemblyReference.cache
